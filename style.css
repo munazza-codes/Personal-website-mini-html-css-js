@@ -1,0 +1,243 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #07051b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+header {
+    padding: 25px 8%;
+}
+header h1 {
+    font-size: 30px;
+}
+.hero {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero h2 {
+    font-size: 50px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.hero p {
+    color: #b8b3c9;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.hero button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #7c3aed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.about {
+    padding: 80px 8%;
+    text-align: center;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.about-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.about-card p {
+    color: #f8e7ff;
+    line-height: 1.7;
+}
+.vibe {
+    padding: 80px 8%;
+    text-align: center;
+}
+.vibe h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+.vibe-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.vibe-card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.vibe-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.vibe-card p {
+    color: #b8b3c9;
+}
+.gallery {
+    padding: 80px 8%;
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: 20px;
+}
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+.quote {
+    padding: 80px 8%;
+    text-align: center;
+}
+.quote h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.quote p {
+    font-size: 24px;
+    color: #b8b3c9;
+    font-style: italic;
+}
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.contact p {
+    color: #b8b3c9;
+    margin-bottom: 25px;
+}
+.contact button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #7c3aed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact button:hover,
+.hero button:hover {
+    background: #9333ea;
+}.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.contact p {
+    color: #b8b3c9;
+    margin-bottom: 25px;
+}
+.contact button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #7c3aed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover,
+.hero button:hover {
+    background: #9333ea;
+}
+@media (max-width: 768px) {
+
+    .hero h2 {
+        font-size: 36px;
+    }
+    .vibe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (max-width: 500px) {
+
+    .vibe-container {
+        grid-template-columns: 1fr;
+    }
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#themeBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #7c3aed;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.light-mode {
+    background: #f5f3ff;
+    color: #171321;
+}
+
+.light-mode .about-card,
+.light-mode .vibe-card {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .hero p,
+.light-mode .about-card p,
+.light-mode .vibe-card p,
+.light-mode .quote p,
+.light-mode .contact p {
+    color: #55505f;
+}
